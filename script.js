@@ -127,7 +127,7 @@ if (loginForm) {
     showMessage(displayError, "Login successful!", false);
     loginForm.reset();
   });
-}
+}        // demo comment for git commit checks
 
 // Social login
 function handleSocialLogin() {
