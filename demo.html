@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Register page for new users to create an account with email and password, or sign in using Google or Apple." />
+    <meta name="keywords" content="registration, sign up, create account, email, password, Google, Apple" />
+    <title>Register Here</title>
+    <link rel="preload" href="demo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="demo.css"></noscript>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="register">
+      <div class="register_area">
+        <div class="form_area">
+          <h1 class="register_title">Get Started Now</h1>
+          <form class="form_style">
+            <div class="form_group">
+              <label for="regName">Name</label>
+              <input type="text" id="regName" placeholder="Enter your full name" />
+            </div>
+            <div class="form_group">
+              <label for="regEmail">Email</label>
+              <input type="email" id="regEmail" placeholder="Enter your email"   />
+            </div>
+            <div class="form_group">
+              <label for="regPassword">Password</label>
+              <input type="password" id="regPassword" placeholder="Enter your password"  />
+              <span class="toggle-password" data-toggle="regPassword">
+                <img width="16px" height="16px" src="img/closeye.png" alt="invisible"/>
+              </span>
+            </div>
+            <div class="form_group" style="margin-bottom: 4px;">
+              <label for="regConfirmPassword">Confirm Password</label>
+              <input type="password" id="regConfirmPassword" placeholder="Enter confirm password" />
+              <span class="toggle-password" data-toggle="regConfirmPassword">
+                <img width="16px" height="16px" src="img/closeye.png" alt="invisible"/>
+              </span>
+            </div>
+            <div class="form_group" style="display: flex; flex-direction: row; align-items: center;">
+              <label  for="regTerms">
+              <input type="checkbox" id="regTerms"  />
+                I agree to the terms and conditions
+              </label>
+            </div>
+            <button class="btn" type="submit">Register</button>
+            <div class="display_error" style="height: 20px;"></div>
+          </form>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+              margin-top: 18px;
+            "
+          >
+            <hr style="width: 180px; border: 1px solid #000" />
+            <p>Or</p>
+            <hr style="width: 180px; border: 1px solid #000" />
+          </div>
+          
+          <div class="social_icons">
+            <button class="social_btn" id="googleLogin">
+              <img
+                src="img/google.png" alt="Google Icon"
+                width="18px" height="18px"
+              />
+              Continue with Google
+            </button>
+            <button class="social_btn" id="appleLogin">
+              <img
+                src="img/mac-os-logo.png" alt="Apple Icon"
+                width="18px" height="18px"
+              />
+              Continue with Apple
+            </button>
+          </div>
+
+          <p class="sign_in_text">
+            Already have an account? <a href="wel.html">Sign In</a>
+          </p>
+        
+          
+        </div>
+
+        <div class="image_area">
+          <img
+            src="img/hero-bgf.jpg"
+            alt="side image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

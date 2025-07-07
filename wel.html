@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Register page for new users to create an account with email and password, or sign in using Google or Apple." />
+    <meta name="keywords" content="registration, sign up, create account, email, password, Google, Apple" />
+    <title>Login Here</title>
+    <link rel="preload" href="demo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="demo.css"></noscript>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="register">
+      <div class="register_area">
+        <div class="form_area">
+          <h1 class="register_title" style="margin-right: 148px;">Welcome back!</h1>
+          <p class="form_group" style="right: 26px;">Enter your credentials to access your account</p>
+          <form class="form_style" id="loginForm">
+            
+            <div class="form_group">
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" placeholder="Enter your email"   />
+            </div>
+            <div class="form_group" style="margin-bottom: 4px;">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" placeholder="Enter your password"  />
+              <span class="toggle-password" data-toggle="loginPassword">
+                <img width="16px" height="16px" src="img/closeye.png" alt="invisible"/>
+              </span>
+            </div>
+            
+            <div class="form_group" style="display: flex; flex-direction: row;">
+              <label  for="terms" >
+              <input type="checkbox" id="terms"  />
+                Remember me
+              </label>
+            </div>
+            <button class="btn" type="submit">Login</button>
+            <div class="display_error" style="height: 20px;"></div>
+          </form>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+              margin-top: 18px;
+            "
+          >
+            <hr style="width: 180px; border: 1px solid #000" />
+            <p>Or</p>
+            <hr style="width: 180px; border: 1px solid #000" />
+          </div>
+          
+          <div class="social_icons">
+            <button class="social_btn" id="googleLogin">
+              <img
+                src="img/google.png" alt="Google Icon"
+                width="18px" height="18px"
+              />
+              Continue with Google
+            </button>
+            <button class="social_btn" id="appleLogin">
+              <img
+                src="img/mac-os-logo.png" alt="Apple Icon"
+                width="18px" height="18px"
+              />
+              Continue with Apple
+            </button>
+          </div>
+
+          <p class="sign_in_text">
+            Don't have an account? <a href="demo.html">Sign up</a>
+          </p>
+        </div>
+
+        <div class="image_area">
+          <img
+            src="img/hero-bgf.jpg"
+            alt="side image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_area {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.form_area {
+  flex: 1;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: #f8f9fa; */
+}
+
+.register_title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  margin-right: 132px;
+  color: #2f2f2f;
+  
+}
+
+.form_style {
+  width: 100%;
+  max-width: 380px;
+}
+
+.form_group {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group label,p {
+  /* margin-bottom: 5px; */
+  font-weight: 500;
+  color: #333;
+  display: block;
+}
+
+.form_group input {
+  padding: 10px 36px 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.form_group span.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 10px;
+  width: 100%;
+  background-color: #020024;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* .btn:hover {
+  background-color: #020024;
+} */
+
+.social_icons {
+  display: flex;
+  gap: 10px;
+  margin: 38px 0 15px;
+}
+
+.social_icons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social_icons button:hover {
+  background-color: #f3f3f3;
+}
+
+.sign_in_text {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.sign_in_text a {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sign_in_text a:hover {
+  text-decoration: underline;
+}
+
+.image_area {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image_area img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  /* object-fit: cover; */
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.social_btn img,
+.toggle-password img {
+  object-fit: contain;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  .register_title{
+    display: block;
+  }
+
+  .register_area {
+    flex-direction: column;
+  }
+
+  .image_area {
+    display: none;
+  }
+
+  .form_area {
+    padding: 100px 21px;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    overflow: hidden;
+  }
+
+  
+
+  .social_icons button {
+    width: 100%;
+  }
+
+  .form_group label {
+    text-align: left;
+  }
+
+  .form_area h1{
+    text-align: left;
+  }
+}
